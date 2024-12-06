@@ -184,6 +184,13 @@ class MethodMeta final {
    * @returns The size in bytes on success, or an error on failure.
    */
   Result<int64_t> memory_planned_buffer_size(size_t index) const;
+  
+  /**
+   * Get the number of instructions in this method.
+   *
+   * @returns The number of instructions.
+   */
+  ET_EXPERIMENTAL size_t num_instructions() const;
 
   /**
    * DEPRECATED: Use num_memory_planned_buffers() instead.
